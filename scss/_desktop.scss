@@ -1,114 +1,114 @@
-
-
-body {
-    background-color: grey;
-    .header {
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .imagenes {
-        display: grid;
-        grid-template-areas: 
-        "titulo titulo titulo" 
-        "box1 box2 box3";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 1fr ;
-        grid-gap: 10px;
-        justify-items: center;
-        align-items: flex-start;
-        .tituloFutbol {
-            grid-area: titulo;
-            font-size: 40px;
-            text-align: center;
-        }
-        .futbol {
-            grid-area: box1;
+@media screen and (min-width:1024px) {
+    body {
+        background-color: grey;
+        .header {
+            background-color: white;
             display: flex;
-            flex-direction: column;
-            justify-items: center;
-            background-color:black  ;
-            color: white;
-            border-radius: 5px ;
-            border: 1.5px solid rgb(78, 2, 40);
-            .futbol1 {
-                text-align: justify;
-            }
-        }
-        .river {
-            grid-area: box2;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            background-color:black  ;
-            color: white;
-            border-radius: 5px ;
-            border: 1.5px solid rgb(78, 2,40);
-            .river2 {
-                text-align: justify;
-            }
-        }
-        .mundial {
-            grid-area: box3;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            background-color:black  ;
-            color: white;
-            border-radius: 5px ;
-            border: 1.5px solid rgb(78, 2, 40);
-            .mundial3 {
-                text-align: justify;
-            }
-        }
-        .footer {
-            display: flex;
-            flex-direction: row;
-            background-color:  rgba(153, 65, 65, 0.363);
             justify-content: space-between;
             align-items: center;
-            position:absolute;
-            bottom:auto;
-            width:100%;
-            .footer__menu {
-                list-style: none;
+            
+        }
+        .imagenes {
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo titulo" 
+            "box1 box2 box3";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 1fr ;
+            grid-gap: 10px;
+            justify-items: center;
+            align-items: flex-start;
+            .tituloFutbol {
+                grid-area: titulo;
+                font-size: 40px;
+                text-align: center;
+            }
+            .futbol {
+                grid-area: box1;
                 display: flex;
                 flex-direction: column;
-                li{
+                justify-items: center;
+                background-color:black  ;
+                color: white;
+                border-radius: 5px ;
+                border: 1.5px solid rgb(78, 2, 40);
+                .futbol1 {
+                    text-align: justify;
+                }
+            }
+            .river {
+                grid-area: box2;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                background-color:black  ;
+                color: white;
+                border-radius: 5px ;
+                border: 1.5px solid rgb(78, 2,40);
+                .river2 {
+                    text-align: justify;
+                }
+            }
+            .mundial {
+                grid-area: box3;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                background-color:black  ;
+                color: white;
+                border-radius: 5px ;
+                border: 1.5px solid rgb(78, 2, 40);
+                .mundial3 {
+                    text-align: justify;
+                }
+            }
+            .footer {
+                display: flex;
+                flex-direction: row;
+                background-color:  rgba(153, 65, 65, 0.363);
+                justify-content: space-between;
+                align-items: center;
+                position:absolute;
+                bottom:auto;
+                width:100%;
+                .footer__menu {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: rgb(12, 240, 202);
+    
+                        }
+                    }
+                }
+                .footer__redes {
+                    margin: 10px auto;
                     a{
-                        text-decoration: none;
-                        color: rgb(12, 240, 202);
-
+                        img{
+                            width: 30px;
+                            height: auto;
+                        }
                     }
                 }
-            }
-            .footer__redes {
-                margin: 10px auto;
-                a{
-                    img{
-                        width: 30px;
-                        height: auto;
-                    }
+                .footer__fieldset {
+                    background-color: rgba(168, 74, 74, 0.39);
+                    border: 3.4px solid black;
+                    border-radius: 7px;
+                    font-family: 'Gowun Batang', serif;
+                    font-weight: 800;
                 }
-            }
-            .footer__fieldset {
-                background-color: rgba(168, 74, 74, 0.39);
-                border: 3.4px solid black;
-                border-radius: 7px;
-                font-family: 'Gowun Batang', serif;
-                font-weight: 800;
-            }
-            .tituloFormulario {
-                text-align: center;
-                font-size: 25px;
+                .tituloFormulario {
+                    text-align: center;
+                    font-size: 25px;
+                }
             }
         }
+        
+    
+        
+    
+        
     }
-    
-
-    
-
-    
 }
