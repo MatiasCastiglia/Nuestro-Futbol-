@@ -1,0 +1,396 @@
+
+  body {
+      background: grey;
+  }  
+#id-partidos {
+    color: rgb(8, 8, 8);
+    font-family: 'STIX Two Math' cursive;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+}
+
+.losclasicos { 
+    color: rgb(253, 253, 253);
+ font-family:'Georgia';
+ font-size: 20px;
+ font-weight: 700;
+ font-style: inherit;
+ border: 2px solid rgb(104, 5, 5);
+ border-radius: 10px ;
+ width: 100%;
+ height: 30%;
+  background: black;
+  text-align: center;
+  margin: 10px auto;
+
+ 
+  
+}
+p { 
+    color: black;
+    font-family: 'Viga';
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-content: center;
+    justify-content: space-between;
+    
+
+}
+.riverboca { 
+    padding: 5%;
+    
+
+}
+
+.riverboca img {
+    width: 100%;
+}
+
+.racindep {
+    padding: 5%;
+
+}
+
+.racindep img { 
+    width: 100%;
+}
+
+.caslaglobo { 
+    padding: 5%;
+}
+
+.caslaglobo img {
+    width: 100%;
+}
+
+
+
+.formulario {
+    padding: 20px;
+
+}
+
+.formulario__fieldset{
+    background-color: rgba(168, 74, 74, 0.39);
+    border: 3.4px solid black;
+    border-radius: 7px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 800;
+    padding:20px;
+
+}
+
+.tituloFormulario{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/* tablet */
+@media screen and (min-width: 768px) { 
+    .header {
+        flex-direction: row;
+        width: 100%;
+        
+        
+    }
+    .header__menu {
+        flex-direction: row;
+    }
+    
+    .imagenes{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo" 
+        "box1 box2 box3";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr  ;
+        padding: 1%;
+        width: 100%;
+    }
+    /* informacion de la fecha */
+    
+}
+            
+        
+    

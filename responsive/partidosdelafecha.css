@@ -1,0 +1,83 @@
+@media screen and (min-width: 768px){
+
+
+
+    #id-partidos{
+    color: rgb(8, 8, 8);
+    font-family: 'STIX Two Math' cursive;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+}
+p {
+   color: black;
+   font-family: 'Viga';
+   font-size: 18px;
+   font-weight: 600;
+   font-style: normal;
+}
+/* .Superclasico{
+    color: rgb(245, 245, 245);
+    font-family: 'Georgia';
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    border: 3px solid rgb(223, 55, 55);
+    border-radius: 13px;
+    background: black;
+    width: 250px;
+    height: 30px;
+}
+
+h2 {
+    color: rgb(253, 253, 253);
+    font-family:'Georgia';
+    font-size: 30px;
+    font-weight: 700;
+    font-style: inherit;
+    border: 3px solid rgb(104, 5, 5);
+    border-radius: 14px ;
+    width: 440px;
+    height: 30px;
+     background: black;
+}
+ */
+.fechas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+
+}
+
+.riverboca{
+    text-align: center;
+    padding-bottom: auto;
+    
+}
+
+.racindep{
+    text-align: center;
+}
+
+.caslaglobo{
+    text-align: center;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgba(153, 65, 65, 0.363);
+     justify-content: space-between;
+     align-items: center;
+     
+     
+     
+    
+}
+}
+

@@ -1,0 +1,302 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.header__logo{
+   margin: 10px;
+}
+
+.header__logo img{
+    height: 50px;
+    width: auto;
+}
+
+.header__menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+
+
+
+}
+.header__menu li{
+    margin: 0px 10px;
+
+}
+
+.header__menu li a {
+
+    text-decoration: none;
+    color: teal;
+}
+
+#id-Futbol{
+    color: rgb(245, 245, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif,cursive;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.contenedor-gris { 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nuestro-futbol {
+    font-family:'Bangers' cursive ;
+    font-size: 50px;
+    color: rgb(252, 247, 247);
+    text-align: center;
+    font-weight: 800;
+    animation: aparecer 7s;
+    
+
+}
+    
+   
+
+div div {
+    font-family: 'Yanone Kaffeesatz';
+    color: rgb(250, 248, 248);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+
+.imagenes{
+   display: grid;
+   grid-template-areas: 
+   "titulo" 
+   "box1"
+   "box2"
+   "box3"; 
+   grid-template-columns: 1fr ;
+   grid-template-rows: 50px 1fr 1fr 1fr;
+   grid-gap: 10px;
+   justify-items: center;
+   align-items: flex-start;
+   padding: 20px;
+
+   
+   
+   
+   
+}
+.tituloFutbol{
+    grid-area: titulo;
+    font-size: 40px;
+    text-align: center;
+    animation: aparecer 7s;
+    
+
+}
+
+
+
+.futbol{
+   grid-area: box1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color:black  ;
+  color: white;
+  border-radius: 5px ;
+  border: 1.5px solid rgb(78, 2, 40);
+  height: 100%;
+  width: 100%;
+  
+}
+.futbol:hover { 
+    transform: scale(1.1,1.1);
+}
+
+.futbol img {
+    width: 100%;
+}
+.futbol1{
+    text-align: justify;
+    padding: 20px;
+    
+}
+
+
+
+.river{
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color:black  ;
+    color: white;
+    border-radius: 5px ;
+    border: 1.5px solid rgb(78, 2, 40);
+    height: 100%;
+    width: 100%;
+}
+.river:hover {
+    transform: scale(1.1,1.1);
+}
+
+.river img { 
+    width: 100%;
+}
+
+.river2{
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+.mundial{
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+ background-color:black  ;
+ color: white;
+ border-radius: 5px ;
+ border: 1.5px solid rgb(78, 2, 40);
+ height: 100%;
+ width: 100%;
+ }
+
+.mundial:hover{
+    transform: scale(1.1,1.1);
+} 
+
+.mundial img { 
+    width: 100%;
+}
+
+
+.mundial3{
+    text-align: justify;
+    padding: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgba(153, 65, 65, 0.363);
+     justify-content: space-between;
+     align-items: center;
+     position:absolute;
+     bottom:auto;
+     width:100%;
+     padding: 20px;
+     background-image: linear-gradient(to right, blue, green);
+    
+}
+
+
+.footer__menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer__menu li a{
+    text-decoration: none;
+    color: rgb(12, 240, 202);
+
+
+
+
+}
+
+.footer__redes{
+    margin: 10px auto;
+}
+
+.footer__redes a img {
+        width: 30px;
+        height: auto;
+}
+
+
+
+.formulario {
+    padding: 20px;
+
+}
+
+.formulario__fieldset{
+    background-color: rgba(168, 74, 74, 0.39);
+    border: 3.4px solid black;
+    border-radius: 7px;
+    font-family: 'Gowun Batang', serif;
+    font-weight: 800;
+    padding:20px;
+
+}
+
+.tituloFormulario{
+    text-align: center;
+    font-size: 25px;
+}
+/* ANIMACION */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translate(0,150PX);
+    }
+    100% {
+         opacity: 1;
+         transform: translate(0,0);
+     }
+    
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        width: 100%;
+        
+        
+    }
+    .header__menu {
+        flex-direction: row;
+    }
+    
+    .imagenes{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo" 
+        "box1 box2 box3";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr  ;
+        padding: 1%;
+        width: 100%;
+    }
+    
+    
+    
+}
+
+
+    

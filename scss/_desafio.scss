@@ -1,0 +1,103 @@
+/* VARIABLES */
+
+$anchoProducto: 200px;
+$altoProducto: 300px;
+$tablet: 768px;
+$colorHeader: #ffc55c;
+
+/* CONDICIONALES */
+
+.producto__1{
+    width: $anchoProducto;
+    height: $altoProducto;
+}
+
+$pantalla: $tablet;
+.producto__1{
+    @if $pantalla==$tablet{
+        width: $anchoProducto*2;
+        height: $altoProducto*2;
+    } @else if $pantalla==$desktop{
+        width: $anchoProducto*3;
+        height: $altoProducto*3;
+    }
+}
+
+/* BUCLES */
+
+@for $i from 1 through 5 {
+    .producto__#{$i}{
+        width: $anchoProducto*3;
+        height: $altoProducto*3;
+    }
+}
+
+/* Otro ejemplo de Bucle */
+
+@for $k from 1 through 10{
+    .boxCelular__#{$k}{
+        width: 100px;
+        height: 200px;
+        background-color: green;
+        border: 1px solid black;
+        margin: 10px;
+    }
+}
+
+/* EACH */
+
+@each $redes in twitter, facebook, instagram{
+    .#{$redes}__icon{
+        width: 30px;
+        height: auto;
+        background-image: url(../img/#{$redes}.png);
+    }
+}
+
+
+
+
+/* MIXIN MOBILE */
+
+@mixin mobile($anchoProducto,$altoProducto,$colorHeader){
+    width:$anchoProducto;
+    height:$altoProducto;
+    background-color: $colorHeader;
+}
+
+@for $i from 1 through 5 {
+    .producto-s-#{$i}{
+        @include mobile($anchoProducto+0px,$altoProducto+0px,$colorHeader)
+    }
+}
+
+
+/* MIXIN TABLET*/
+
+@mixin tablet($anchoProducto,$altoProducto,$colorHeader){
+    width:$anchoProducto;
+    height:$altoProducto;
+    background-color: $colorHeader;
+}
+
+@for $i from 1 through 5 {
+    .producto-m-#{$i}{
+        @include tablet($anchoProducto*2+0px,$altoProducto*2+0px,$colorHeader)
+    }
+}
+
+/* MIXIN DESKTOP */
+
+@mixin desktop($anchoProducto,$altoProducto,$colorHeader){
+    width:$anchoProducto;
+    height:$altoProducto;
+    background-color: $colorHeader;
+}
+
+@for $i from 1 through 5 {
+    .producto-l-#{$i}{
+        @include desktop($anchoProducto*3+0px,$altoProducto*3+0px,$colorHeader)
+    }
+}
+
+/* -s- small para mobile, -m- medium para tablet y -l- large para desktop, no sé si se usan así las abreviaturas */

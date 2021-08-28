@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Oficial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Recursos/futbol.jpg">
+     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="navbar navbar-expand-lg navbar-light header">
+        <div class="container-fluid">
+          <a class="navbar-brand header__logo" href="./index.html" >
+            <img src="./Recursos/logo.png" alt="" width="70" height="auto" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-5 mb-lg-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a>
+                <li class="nav-item"><a href="./page/partidosdelafecha.html" class="nav-link">Partido de la fecha</a>
+                <li class="nav-item"><a href="./page/informaciondelafecha.html" class="nav-link">Informacion de la fecha</a>
+                <li class="nav-item"><a href="./page/resumen.html" class="nav-link">Resumen</a>
+                <li class="nav-item"><a href="./page/tabladeposiciones.html" class="nav-link">Tabla de posiciones</a>
+              </ul>
+          </div>
+        </div>
+    </header>
+    <div class="carrusel container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Recursos/independiente.jpg" class="d-center w-100" alt="..." "img-fluid" >
+            </div>
+            <div class="carousel-item">
+              <img src="./Recursos/boca.webp" class="d-block w-100" alt="..." "img-fluid" >
+            </div>
+            <div class="carousel-item">
+              <img src="./Recursos/river.webp" class="d-block w-100" alt="..." "img-fluid">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+      <diV class="imagenes" >
+        <h1 class="tituloFutbol">Nuestro Futbol</h1>
+        <div class="futbol" > 
+            <img src="Recursos/arg vs bol.jpg">
+            <p class="futbol1"> La seleccion gano por goleada y messi sigue rompiendo records</p>
+        </div>
+        <!-- aca esta mi cuadro dos  -->
+        <div class="river" > 
+            <img src="Recursos/descarga (2).jpg">
+            <p class="river2"> River tuvo una visita de lujo.El pipa visito a river en  orlando  y hablo con sus ex compañeros y con el muñeco gallardo</p>
+        </div>
+        <!-- aca esta mi cuadro 3 -->
+        <div class="mundial" >
+            <img src="./Recursos/descarga (1).jpg" >
+            <p class="mundial3"> Hoy se cumplen 36 años de la copa del mundo mas gloriosa de  todas</p>
+        </div>
+    </div>
+    </div>
+    <h2 class="nuestro-futbol">Nuestro Futbol</h2>
+    <br>
+    <form class="formulario" >
+       <fieldset class="formulario__fieldset" >
+           <legend class="tituloFormulario" >Dejanos tu Opinion</legend>
+           <label  class="nombreyApellido" for="NombreyApellido"> Nombre y Apellido</label>
+           <input  class="input__nombre" type="text" name="NombreyApellido">
+           <br>
+           <br>
+           <label  class="qtplp" for="¿Quetepareciolapagina?">¿Que te parecio la pagina?</label>
+           <br>
+           <textarea></textarea>
+           <br>
+           <label  class="qpdlp" for="¿Quepensasdelapagina?">¿Que pensas de la pagina?</label>
+           <br>
+           <textarea></textarea>
+           <br>
+           <label for="Elegir ">Crees que le falta:</label>
+           <input type="radio" name="Elegir" id="Informacion" value="Informacion">
+           <label  class="informacion" for="Informacion">Informacion</label>
+           <input type="radio" name="Elegir" id= "Equipos" value="Equipos">
+           <label for="Equipos" class="equipos" >Equipos</label>
+           <input type="radio" name="Elegir" id="Conceptos" value="Conceptos">
+           <label for="Conceptos"  class="conceptos" >Conceptos</label>
+           <br>
+           <input type="submit" value="Enviar Formulario" class="submit" >
+           <input type="Reset" value="Limpiar Formulario" class="reset" >
+      </fieldset>
+    </form>
+    <footer> 
+        <div class="footer" >
+            <ul class="footer__menu" >
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./page/informaciondelafecha.html">Informacion de la Fecha</a></li>
+                <li><a href="./page/partidosdelafecha.html">Partidos de la Fecha</a></li>
+                <li><a href="./page/resumen.html">Resumen</a></li>
+                <li><a href="./page/tabladeposiciones.html">Tabla de posiciones</a></li>
+            </ul>
+            <div class="footer__redes" >
+                <a href="https://www.instagram.com/nuestro_futbol10/"><img src="./Recursos/instagram.png" alt=""></a>
+                <a href="#"><img src="./Recursos/twittter.png" alt=""></a>
+                <a href="#"><img src="./Recursos/facebook.png" alt=""></a>
+            </div>                     
+        </div>
+        
+
+    </footer>
+
+       
+       
+       
+
+       
+        
+        
+    
+    
+   
+  
+
+
+
+
+
+
+
+</body>
+
+</html>

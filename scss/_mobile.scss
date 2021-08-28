@@ -1,0 +1,187 @@
+body { 
+    background-color: grey;
+    .header { 
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        &__logo { 
+            margin: 10px;
+            img { 
+                height: 50px;
+                width: auto;
+            }
+        } 
+
+    }
+    
+    .imagenes { 
+        display: grid;
+        grid-template-areas: 
+        "titulo" 
+        "box1"
+        "box2"
+        "box3"; 
+        grid-template-columns: 1fr ;
+        grid-template-rows: 50px 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: flex-start;
+        padding: 10px;
+        
+        .titulofutbol { 
+            grid-area: titulo;
+            font-size: 40px;
+            text-align: center;
+            animation: aparecer 7s;
+        }
+        
+        .futbol {
+            grid-area: box1;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            background-color:black  ;
+            color: white;
+            border-radius: 5px ;
+            border: 1.5px solid rgb(78, 2, 40);
+            height: 100%;
+            width: 100%;
+            
+            img {
+                width: 100%;
+            }
+            
+            .futbol1 {
+                text-align: justify;
+                padding: 20px;
+            }
+        }
+        
+        .futbol:hover {
+            transform: scale(1.1,1.1);
+        }
+        
+        .river {
+            grid-area: box2;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            background-color:black  ;
+            color: white;
+            border-radius: 5px ;
+            border: 1.5px solid rgb(78, 2, 40);
+            height: 100%;
+            width: 100%;
+            
+            img { 
+                width: 100%;
+            }
+            
+            .river2 {
+                text-align: justify;
+                padding: 20px;
+            }
+        } 
+        
+        .river:hover {
+            transform: scale(1.1,1.1);
+        }
+        
+        .mundial {
+            grid-area: box3;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            background-color:black;
+            color: white;
+            border-radius: 5px ;
+            border: 1.5px solid rgb(78, 2, 40);
+            height: 100%;
+            width: 100%;
+            
+            img {
+                width: 100%;
+            }
+            
+            .mundial3 {
+                text-align: justify;
+                padding: 20px;
+            }
+        }
+        
+        .mundial:hover {
+            transform: scale(1.1,1.1);
+        } 
+          
+        
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+         align-items: center;
+         position:absolute;
+         bottom:auto;
+         width:100%;
+         padding: 10px;
+         background-image: linear-gradient(to right, blue, green);
+         
+         .footer__menu  {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li {
+                a {
+                    text-decoration: none;
+                    color: rgb(12, 240, 202);
+                }
+            }
+         }
+        .footer__redes {
+            margin: 7px auto;
+            a {
+                img {
+                    width: 25px;
+                    height: auto;
+                }
+            }
+        }
+         
+    
+    }
+    
+  .formulario {
+        padding: 20px;
+        margin: 10px;
+        
+        .formulario__fieldset{
+            background-color: rgba(168, 74, 74, 0.39);
+            border: 3.4px solid black;
+            border-radius: 7px;
+            font-family: 'Gowun Batang', serif;
+            font-weight: 800;
+            padding:20px;
+            .tituloFormulario {
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+    }
+        
+/* ANIMACION */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translate(0,150PX);
+    }
+    100% {
+         opacity: 1;
+         transform: translate(0,0);
+     }
+}
+}

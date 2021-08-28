@@ -1,0 +1,424 @@
+@charset "UTF-8";
+body {
+  background-color: grey;
+  /* ANIMACION */ }
+  body .header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; }
+    body .header__logo {
+      margin: 10px; }
+      body .header__logo img {
+        height: 50px;
+        width: auto; }
+  body .imagenes {
+    display: grid;
+    grid-template-areas: "titulo"  "box1" "box2" "box3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 10px; }
+    body .imagenes .titulofutbol {
+      grid-area: titulo;
+      font-size: 40px;
+      text-align: center;
+      animation: aparecer 7s; }
+    body .imagenes .futbol {
+      grid-area: box1;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228;
+      height: 100%;
+      width: 100%; }
+      body .imagenes .futbol img {
+        width: 100%; }
+      body .imagenes .futbol .futbol1 {
+        text-align: justify;
+        padding: 20px; }
+    body .imagenes .futbol:hover {
+      transform: scale(1.1, 1.1); }
+    body .imagenes .river {
+      grid-area: box2;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228;
+      height: 100%;
+      width: 100%; }
+      body .imagenes .river img {
+        width: 100%; }
+      body .imagenes .river .river2 {
+        text-align: justify;
+        padding: 20px; }
+    body .imagenes .river:hover {
+      transform: scale(1.1, 1.1); }
+    body .imagenes .mundial {
+      grid-area: box3;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228;
+      height: 100%;
+      width: 100%; }
+      body .imagenes .mundial img {
+        width: 100%; }
+      body .imagenes .mundial .mundial3 {
+        text-align: justify;
+        padding: 20px; }
+    body .imagenes .mundial:hover {
+      transform: scale(1.1, 1.1); }
+  body .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, blue, green); }
+    body .footer .footer__menu {
+      list-style: none;
+      display: flex;
+      flex-direction: column; }
+      body .footer .footer__menu li a {
+        text-decoration: none;
+        color: #0cf0ca; }
+    body .footer .footer__redes {
+      margin: 7px auto; }
+      body .footer .footer__redes a img {
+        width: 25px;
+        height: auto; }
+  body .formulario {
+    padding: 20px;
+    margin: 10px; }
+    body .formulario .formulario__fieldset {
+      background-color: rgba(168, 74, 74, 0.39);
+      border: 3.4px solid black;
+      border-radius: 7px;
+      font-family: 'Gowun Batang', serif;
+      font-weight: 800;
+      padding: 20px; }
+      body .formulario .formulario__fieldset .tituloFormulario {
+        text-align: center;
+        font-size: 25px; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translate(0, 150PX); }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    width: 100%; }
+  .header__menu {
+    flex-direction: row; }
+  .imagenes {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"  "box1 box2 box3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    padding: 1%;
+    width: 100%; }
+  /* informacion de la fecha */ }
+
+/* VARIABLES */
+/* CONDICIONALES */
+.producto__1 {
+  width: 200px;
+  height: 300px; }
+
+.producto__1 {
+  width: 400px;
+  height: 600px; }
+
+/* BUCLES */
+.producto__1 {
+  width: 600px;
+  height: 900px; }
+
+.producto__2 {
+  width: 600px;
+  height: 900px; }
+
+.producto__3 {
+  width: 600px;
+  height: 900px; }
+
+.producto__4 {
+  width: 600px;
+  height: 900px; }
+
+.producto__5 {
+  width: 600px;
+  height: 900px; }
+
+/* Otro ejemplo de Bucle */
+.boxCelular__1 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__2 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__3 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__4 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__5 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__6 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__7 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__8 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__9 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+.boxCelular__10 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+  margin: 10px; }
+
+/* EACH */
+.twitter__icon {
+  width: 30px;
+  height: auto;
+  background-image: url(../img/twitter.png); }
+
+.facebook__icon {
+  width: 30px;
+  height: auto;
+  background-image: url(../img/facebook.png); }
+
+.instagram__icon {
+  width: 30px;
+  height: auto;
+  background-image: url(../img/instagram.png); }
+
+/* MIXIN MOBILE */
+.producto-s-1 {
+  width: 200px;
+  height: 300px;
+  background-color: #ffc55c; }
+
+.producto-s-2 {
+  width: 200px;
+  height: 300px;
+  background-color: #ffc55c; }
+
+.producto-s-3 {
+  width: 200px;
+  height: 300px;
+  background-color: #ffc55c; }
+
+.producto-s-4 {
+  width: 200px;
+  height: 300px;
+  background-color: #ffc55c; }
+
+.producto-s-5 {
+  width: 200px;
+  height: 300px;
+  background-color: #ffc55c; }
+
+/* MIXIN TABLET*/
+.producto-m-1 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffc55c; }
+
+.producto-m-2 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffc55c; }
+
+.producto-m-3 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffc55c; }
+
+.producto-m-4 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffc55c; }
+
+.producto-m-5 {
+  width: 400px;
+  height: 600px;
+  background-color: #ffc55c; }
+
+/* MIXIN DESKTOP */
+.producto-l-1 {
+  width: 600px;
+  height: 900px;
+  background-color: #ffc55c; }
+
+.producto-l-2 {
+  width: 600px;
+  height: 900px;
+  background-color: #ffc55c; }
+
+.producto-l-3 {
+  width: 600px;
+  height: 900px;
+  background-color: #ffc55c; }
+
+.producto-l-4 {
+  width: 600px;
+  height: 900px;
+  background-color: #ffc55c; }
+
+.producto-l-5 {
+  width: 600px;
+  height: 900px;
+  background-color: #ffc55c; }
+
+/* -s- small para mobile, -m- medium para tablet y -l- large para desktop, no sé si se usan así las abreviaturas */
+body {
+  background-color: grey; }
+  body .header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  body .imagenes {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"  "box1 box2 box3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: flex-start; }
+    body .imagenes .tituloFutbol {
+      grid-area: titulo;
+      font-size: 40px;
+      text-align: center; }
+    body .imagenes .futbol {
+      grid-area: box1;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228; }
+      body .imagenes .futbol .futbol1 {
+        text-align: justify; }
+    body .imagenes .river {
+      grid-area: box2;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228; }
+      body .imagenes .river .river2 {
+        text-align: justify; }
+    body .imagenes .mundial {
+      grid-area: box3;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      border: 1.5px solid #4e0228; }
+      body .imagenes .mundial .mundial3 {
+        text-align: justify; }
+    body .imagenes .footer {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(153, 65, 65, 0.363);
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: auto;
+      width: 100%; }
+      body .imagenes .footer .footer__menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column; }
+        body .imagenes .footer .footer__menu li a {
+          text-decoration: none;
+          color: #0cf0ca; }
+      body .imagenes .footer .footer__redes {
+        margin: 10px auto; }
+        body .imagenes .footer .footer__redes a img {
+          width: 30px;
+          height: auto; }
+      body .imagenes .footer .footer__fieldset {
+        background-color: rgba(168, 74, 74, 0.39);
+        border: 3.4px solid black;
+        border-radius: 7px;
+        font-family: 'Gowun Batang', serif;
+        font-weight: 800; }
+      body .imagenes .footer .tituloFormulario {
+        text-align: center;
+        font-size: 25px; }
